@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Propose Day ❤️</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.background {
+    min-height: 100vh;
+    width: 100%;
+    background:
+        linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.6)),
+        url("couple.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 24px;
+    max-width: 380px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.45);
+}
+
+.heart {
+    font-size: 2.5em;
+    animation: pulse 1.2s infinite;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 1.08em;
+    line-height: 1.7;
+}
+
+button {
+    margin-top: 22px;
+    padding: 12px 32px;
+    border-radius: 30px;
+    border: none;
+    background: #ff4d6d;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.08);
+    background: #ff1e4d;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.35); }
+    100% { transform: scale(1); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="background">
+    <div class="card">
+        <div class="heart">❤️</div>
+        <h1>Happy Propose Day my bugdii!</h1>
+        <p>
+            Every sunset feels warmer with you 🌅<br><br>
+            You are my smile, my peace, my forever.<br><br>
+            Will you be mine today, tomorrow,<br>
+            and always? 💍
+        </p>
+        <button onclick="yesClicked()">Yes ❤️</button>
+    </div>
+</div>
+
+<script>
+function yesClicked() {
+    alert("You just made my world complete 💖🥹");
+}
+</script>
+
+</body>
+</html>
